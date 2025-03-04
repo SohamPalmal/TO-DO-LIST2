@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #8BC6EC, #9599E2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 450px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4A154B;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4A154B;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #4A154B;
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6A1B9A;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #F8F8F8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-3px);
+}
+
+li span {
+    flex-grow: 1;
+    margin-right: 15px;
+    font-size: 16px;
+    word-break: break-all;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #AAA;
+}
+
+.delete-button {
+    background-color: #E57373;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #F44336;
+}
+
+.edit-button {
+    background-color: #00BCD4; /* Light blue color for edit button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-right: 5px; /* Add some space between buttons */
+}
+
+.edit-button:hover {
+    background-color: #00ACC1; /* Slightly darker blue on hover */
+}
